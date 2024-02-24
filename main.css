@@ -82,23 +82,21 @@ img {
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 100px); /* Adjust the height to accommodate the footer */
-    padding: 20px;
+    padding: 0 20px; /* Remove all padding */
     text-align: center;
 }
 
+.container-padding-vert-md {
+    padding-top: 0; /* Remove top padding */
+}
+
+
 footer {
     text-align: center;
-    padding: 20px;
     width: 100%;
     position: absolute;
     bottom: 0;
     background-color: #dda4b0;
-}
-
-
-.container-padding-vert-md {
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
 
 .container-grid {
@@ -169,5 +167,97 @@ footer {
     width: 400px;
 }
 
+/* Additional styles for the contact form */
+.contact-form {
+    background-color: #dfcaaf;
+    padding: 40px;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #8a7e6a;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: black;
+}
+
+/* bottom text scroll from left to right */
+.scroll-left {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    color: black;
+   }
+   .scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll-left 15s linear infinite;
+    -webkit-animation: scroll-left 15s linear infinite;
+    animation: scroll-left 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes scroll-left {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes scroll-left {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes scroll-left {
+    0%   { 
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 
+    }
+   }
 
 
