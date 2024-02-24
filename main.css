@@ -78,11 +78,22 @@ img {
 
 .page-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Adjust the height to accommodate the footer */
     padding: 20px;
-    text-align: center; /* Center the button horizontally */
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #dda4b0;
+}
+
 
 .container-padding-vert-md {
     padding-top: 80px;
@@ -105,14 +116,6 @@ img {
 
 .center-links {
     text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 .button-primary { 
@@ -139,4 +142,30 @@ footer {
     background-color: #72845e;
     color: white;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: pre-wrap;
+    width: 80%; /* Adjust the width */
+    max-width: 600px; /* Limit the maximum width */
+    text-align: center; /* Center the text */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 80vh; /* Limit the maximum height */
+}
+
+#about-text {
+    font-size: 20px;
+    margin-bottom: 20px; /* Add some space between the text and the image */
+}
+
+#selfie {
+    width: 400px;
+
+
 
