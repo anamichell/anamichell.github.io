@@ -81,6 +81,7 @@ img {
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
+    text-align: center; /* Center the button horizontally */
 }
 
 .container-padding-vert-md {
@@ -112,5 +113,30 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+.button-primary { 
+    background-color: transparent;
+    color: #140609;
+    border: 2px solid black;
+    border-radius: 2px;
+    display: inline-block; /* Make the button behave like an inline element */
+    margin: 0; /* Reset margin */
+    box-sizing: border-box;
+    padding: 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: .2s all;
+    font-family: Keybp; 
+}
+
+.green-button {
+    border-color: black;
+    color: black;
+}
+
+.green-button:hover {
+    background-color: #72845e;
+    color: white;
 }
 
