@@ -83,6 +83,7 @@ img {
     align-items: center;
     min-height: calc(100vh - 100px); /* Adjust the height to accommodate the footer */
     padding: 20px;
+    text-align: center;
 }
 
 footer {
@@ -166,6 +167,7 @@ footer {
 
 #selfie {
     width: 400px;
+}
 
 
 
