@@ -259,5 +259,34 @@ footer {
     transform: translateX(-100%); 
     }
    }
+   
+.projects { 
+    max-width: 600px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 auto;
+    background: #72845e;
+}
 
+.projects h2 {
+    color: #fff;
+    margin-bottom: 10px; 
+}
 
+.projects p {
+    color: #fff; 
+    margin-bottom: 10px; 
+}
+
+.projects ul {
+    margin: 0; 
+    padding: 0;
+    list-style: none; 
+}
+
+.projects li {
+    color: #fff;
+    margin-right: 10px;
+    display: inline-block;
+
+}
