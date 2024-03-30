@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> c | o | n | t | a | c | t </title>
     <link rel="stylesheet" href="main.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 </head>
 <body>
     <header class="site-nav">
@@ -24,13 +23,15 @@
                 <div class="grid-column-span-6-sm grid-column-start-2-md grid-column-span-4-md grid-column-start-3-lg grid-column-span-3-lg">
                     <h1 class="text-headline-1">Say Hi!</h1>
                     <div class="contact-form">
-                        <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                            <input type="text" name="name" placeholder="Your Name (required)" required>
-                            <input type="email" name="email" placeholder="Your Email (required)" required>
-                            <textarea name="message" placeholder="Your Message (required)" required></textarea>
-                            <input type="submit" value="Send Message" >
-                        </form>
+                        <a href="https://www.flaticon.com/free-icons/internet" title="internet icons"></a>
+                        <img src="assets/images/logos/world-wide-web.png" alt="Webpage Icon"></a>
+                        <p>https://anamichell.github.io/</p>
+                        <a href="https://www.flaticon.com/free-icons/email" title="email icons"></a>
+                        <img src="assets/images/logos/email.png" alt="Email Icon"></a>
+                        <p>ana.garcia30@utrgv.edu</p>
+                        <a href="https://www.flaticon.com/free-icons/phone" title="phone icons"></a>
+                        <img src="assets/images/logos/calling.png" alt="Phone Icon"></a>
+                        <p>(956)340-7110</p>
                     </div>
                     </div>
                 </div>
@@ -42,41 +43,5 @@
             <p>This page is still under construction. Check back for more updates.</p>
         </div>
     </footer>
-    <script>
-        const constraints = {
-            name: {
-                presence: { allowEmpty: false }
-            },
-            email: {
-                presence: { allowEmpty: false },
-                email: true
-            },
-            message: {
-                presence: { allowEmpty: false }
-            }
-        };
-     
-        const form = document.getElementById('contact-form');
-     
-        form.addEventListener('submit', function (event) {
-          const formValues = {
-              name: form.elements.name.value,
-              email: form.elements.email.value,
-              message: form.elements.message.value
-          };
-     
-          const errors = validate(formValues, constraints);
-     
-          if (errors) {
-            event.preventDefault();
-            const errorMessage = Object
-                .values(errors)
-                .map(function (fieldValues) { return fieldValues.join(', ')})
-                .join("\n");
-     
-            alert(errorMessage);
-          }
-        }, false);
-     </script>
 </body>
 </html>
