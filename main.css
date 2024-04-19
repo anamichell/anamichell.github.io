@@ -83,11 +83,20 @@ img {
     align-items: center;
     min-height: calc(100vh - 100px); /* Adjust the height to accommodate the footer */
     padding: 0 20px; /* Remove all padding */
-    text-align: center;
 }
 
 .container-padding-vert-md {
-    padding-top: 0; /* Remove top padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
+    text-align: center; /* Center the text within the grid */
 }
 
 
@@ -99,11 +108,11 @@ footer {
     background-color: #dda4b0;
 }
 
-.container-grid {
+/* .container-grid {
     display: grid;
     grid-template-columns: 1fr;
     box-sizing: border-box;
-}
+} */
 
 .text-headline-1 {
     font-family: Keybp;
