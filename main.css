@@ -128,6 +128,7 @@ footer {
     text-align: center;
 }
 
+/* button for viewing resume */
 .button-primary { 
     background-color: transparent;
     color: #140609;
@@ -151,6 +152,32 @@ footer {
 .green-button:hover {
     background-color: #72845e;
     color: white;
+}
+
+/* button for viewing projects */
+.button-secondary { 
+    background-color: transparent;
+    color: #140609;
+    border: 2px solid black;
+    border-radius: 1px;
+    display: inline-block; /* Make the button behave like an inline element */
+    margin-top: 10px; /* Reset margin */
+    box-sizing: border-box;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    transition: .2s all;
+    font-family: Keybp; 
+}
+
+.white-button {
+    border-color: black;
+    color: black;
+}
+
+.white-button:hover {
+    background-color: white;
+    color: black;
 }
 
 .flex-container {
@@ -255,21 +282,26 @@ footer {
    }
    
    .projects {
-    max-width: 600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .projects-container {
-    background-color: #72845e; /* Green background color */
-    padding: 2rem;
-    border-radius: 8px; /* Rounded corners */
-    margin-bottom: 2rem; /* Space between each project */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; /* space between cards */
 }
 
 .project {
-    color: #fff;
+  background-color: #72845e; /* keep your green cards */
+  padding: 2rem;
+  border-radius: 8px;
+  color: #fff;
+  text-align: left;
+  transition: transform 0.2s ease;
 }
+
 
 .projects h2 {
     margin-bottom: 10px;
