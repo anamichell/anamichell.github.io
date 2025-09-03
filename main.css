@@ -73,10 +73,6 @@ p {
     margin-inline-end: 0;
 }
 
-img {
-    width: 30px;
-}
-
 .page-content {
     display: flex;
     flex-direction: column;
@@ -179,6 +175,43 @@ footer {
     background-color: white;
     color: black;
 }
+
+/* project section */
+.project-filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.3s;
+    font-family: Keybp; 
+}
+
+.filter-btn:hover {
+    background-color: #ddd;
+}
+
+.filter-btn.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.project {
+    display: none; /* hidden by default */
+    margin-bottom: 20px;
+}
+
+.project.show {
+    display: block;
+}
+
 
 .flex-container {
     display: flex;
