@@ -161,9 +161,9 @@ footer {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    white-space: pre-wrap;
+    /* white-space: pre-wrap; */
     width: 80%; /* Adjust the width */
-    max-width: 600px; /* Limit the maximum width */
+    max-width: 800px; /* Limit the maximum width */
     text-align: center; /* Center the text */
     overflow-y: auto; /* Enable vertical scrolling */
     max-height: 80vh; /* Limit the maximum height */
@@ -171,7 +171,27 @@ footer {
 
 #about-text {
     font-size: 20px;
-    margin-bottom: 20px; /* Add some space between the text and the image */
+    margin-bottom: 10px; /* Add some space between the text and the image */
+}
+
+#index-header {
+    font-size: 20px;
+}
+
+.index-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: pre-wrap;
+    width: 80%; /* Adjust the width */
+    max-width: 600px; /* Limit the maximum width */
+    text-align: center; /* Center the text */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 80vh; /* Limit the maximum height */
 }
 
 #selfie {
