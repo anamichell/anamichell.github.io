@@ -112,6 +112,7 @@ footer {
     box-sizing: border-box;
 } */
 
+/* index text */
 .text-headline-1 {
     font-family: Keybp;
     font-weight: 300;
@@ -121,8 +122,23 @@ footer {
 }
 
 .center-links {
-    text-align: center;
+  display: flex;
+  text-decoration: none !important;
+  gap: 12px; /* consistent space between icons */
+  text-align: center;
 }
+
+.center-links img:hover {
+    transform: scale(1.1);
+}
+
+.text-subheadline {
+    font-family: Keybp;
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
 
 /* button for viewing resume */
 .button-primary { 
