@@ -9,6 +9,3 @@ My about page includes a more in-depth description of myself and a photo of me!
 
 # Projects
 My projects page will include a overview of my software related projects. 
-
-# Contact
-Contact page is still under construction. Currently implementing PHP and JavaScript to create a dynamic page to support input validation.
